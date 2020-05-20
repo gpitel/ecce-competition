@@ -13,9 +13,17 @@
       </div>
       
       <div class="row-center"> 
-        <iframe width="503" height="127" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6Az63wYxHKheiu5XsClHZCug_4fjGQqz0sF7HJ9MjC69X5_UUTZSd1q6IO3NdGKF5Kyv5K3hwH6t5/pubchart?oid=772347168&format=interactive"></iframe>
+        <iframe id="google-leaderboard"width="503" height="127" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6Az63wYxHKheiu5XsClHZCug_4fjGQqz0sF7HJ9MjC69X5_UUTZSd1q6IO3NdGKF5Kyv5K3hwH6t5/pubchart?oid=772347168&format=interactive"></iframe>
       </div>
     </div>
 </center>
 </body>
 </html>
+
+<script>
+    window.setInterval("reloadIFrame();", 15000);
+
+    function reloadIFrame() {
+     document.getElementById('google-leaderboard').contentWindow.location.reload(true);
+    }
+</script>
