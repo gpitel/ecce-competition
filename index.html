@@ -21,9 +21,9 @@
 </html>
 
 <script>
-    window.setInterval("reloadIFrame();", 15000);
+    window.setInterval("reloadPage();", 30000);
 
-    function reloadIFrame() {
-     document.getElementById('google-leaderboard').contentWindow.location.reload(true);
+    function reloadPage() {
+     location.reload();
     }
 </script>
